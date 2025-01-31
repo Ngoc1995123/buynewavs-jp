@@ -1,0 +1,23 @@
+.about-us {
+    background-color: black;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, blue, purple);
+}
+
+.about-us h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.about-content {
+    margin: 40px;
+}
+
+.about-container {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+}

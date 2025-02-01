@@ -54,30 +54,3 @@
 .av-item p {
     color: #777777;
 }
-
-/* Product section */
-.section-arrival {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.product-item {
-    display: flex;
-    flex-direction: column;
-    max-width: 250px;
-    align-items: center;
-    margin-bottom: 24px;
-}
-
-.product-title {
-    color: #777777;
-}
-
-.product-name {
-    font-weight: 600;
-    font-size: 20px;
-
-}

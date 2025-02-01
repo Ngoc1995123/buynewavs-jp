@@ -1,3 +1,18 @@
 .container-fluid {
     margin-left: 10%;
 }
+
+/* Dropdown menu sẽ xổ xuống khi hover vào .nav-item */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tắt dropdown menu mặc định khi không hover */
+.nav-item .dropdown-menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+}

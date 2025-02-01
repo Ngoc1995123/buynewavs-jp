@@ -44,7 +44,13 @@
     <!-- Footer section -->
     <div id="footer"></div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const navLinks = document.querySelectorAll(".nav-link");
+            console.log("Số lượng nav-links:", navLinks.length);
+        });
+    </script>
 </body>
 
 </html>

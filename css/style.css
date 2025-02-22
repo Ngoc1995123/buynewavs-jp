@@ -20,6 +20,12 @@ a {
     margin-bottom: 40px;
 }
 
+.wallpaper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .title {
     display: flex;
     margin: auto;
@@ -74,8 +80,14 @@ body {
     .section-arrival {
         justify-content: center;
     }
+
     .product-item {
         max-width: 45%;
+    }
+
+    .wallpaper {
+        padding: 0 20px;
+        /* Thêm padding để ảnh không sát mép */
     }
 }
 
@@ -84,13 +96,23 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
     .product-item {
         max-width: 100%;
+    }
+
+    .wallpaper {
+        padding: 0 10px;
     }
 }
 
 /* Điều chỉnh tiêu đề */
 @media (max-width: 576px) {
+    .wallpaper {
+        padding: 0;
+        /* Đảm bảo hình ảnh nằm trong container */
+    }
+
     .title h1 {
         font-size: 24px;
         padding: 10px 20px;

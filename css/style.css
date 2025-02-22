@@ -88,6 +88,15 @@ a {
     /* Ẩn trên desktop */
 }
 
+/* Ngăn đổi màu chữ sau khi nhấn */
+.call-now-btn:visited,
+.call-now-btn:active,
+.call-now-btn:focus {
+    color: white !important;
+    background-color: #f5af10 !important;
+    text-decoration: none !important;
+}
+
 /* Ngăn trang bị cuộn ngang */
 body {
     overflow-x: hidden;

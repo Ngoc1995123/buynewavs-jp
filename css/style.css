@@ -70,6 +70,24 @@ a {
 
 }
 
+.call-now-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f5af10;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    z-index: 1000;
+    display: none;
+    /* Ẩn trên desktop */
+}
+
 /* Ngăn trang bị cuộn ngang */
 body {
     overflow-x: hidden;
@@ -116,5 +134,13 @@ body {
     .title h1 {
         font-size: 24px;
         padding: 10px 20px;
+    }
+
+    .call-now-btn {
+        display: block;
+    }
+
+    footer {
+        margin-bottom: 40px;
     }
 }

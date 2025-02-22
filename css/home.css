@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .home-container .content {
@@ -24,25 +25,57 @@
     margin-bottom: 40px;
 }
 
+/* Responsive cho Home Container */
+@media (max-width: 1024px) {
+    .home-container .content {
+        padding: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container .content {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-container .content {
+        padding: 20px;
+    }
+
+    .home-container h1 {
+        font-size: 24px;
+    }
+
+    .home-container h4 {
+        font-size: 16px;
+    }
+}
+
+/* Danh sách Antivirus */
 .section-av {
-    margin: 40px 100px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
 }
 
 .list-av {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .av-item {
-    max-width: 300px;
-    border: #EC8305 1px dashed;
+    flex: 1 1 calc(25% - 20px);
+    max-width: 250px;
+    border: 1px dashed #EC8305;
     border-radius: 20px;
     padding: 40px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: center;
+    text-align: center;
     box-sizing: border-box;
 }
 
@@ -53,4 +86,33 @@
 
 .av-item p {
     color: #777777;
+}
+
+/* Responsive cho danh sách Antivirus */
+@media (max-width: 1024px) {
+    .av-item {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .list-av {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .av-item {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .list-av {
+        flex-direction: column;
+    }
+
+    .av-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }

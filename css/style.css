@@ -63,3 +63,36 @@ a {
     font-size: 20px;
 
 }
+
+/* Ngăn trang bị cuộn ngang */
+body {
+    overflow-x: hidden;
+}
+
+/* Responsive cho danh sách sản phẩm */
+@media (max-width: 1024px) {
+    .section-arrival {
+        justify-content: center;
+    }
+    .product-item {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-arrival {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-item {
+        max-width: 100%;
+    }
+}
+
+/* Điều chỉnh tiêu đề */
+@media (max-width: 576px) {
+    .title h1 {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+}

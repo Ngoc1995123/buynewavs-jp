@@ -1,23 +1,22 @@
+/* Reset link styles */
 a {
     text-decoration: none;
 }
 
+/* Navbar Active Link */
 .navbar-nav .nav-link.active {
     font-weight: bold;
-    /* Làm chữ đậm */
     color: #ffc107 !important;
-    /* Màu khác để nổi bật */
     border-bottom: 2px solid #ffc107;
-    /* Gạch chân menu đang active */
 }
 
-/* Wallpaper css */
+/* Wallpaper */
 .wallpaper {
     width: 100%;
     display: flex;
-    margin: auto;
     justify-content: center;
     margin-bottom: 40px;
+    padding: 0 20px;
 }
 
 .wallpaper img {
@@ -26,9 +25,9 @@ a {
     display: block;
 }
 
+/* Title */
 .title {
     display: flex;
-    margin: auto;
     justify-content: center;
     margin-bottom: 48px;
 }
@@ -42,8 +41,7 @@ a {
     border-radius: 5px;
 }
 
-/* product */
-/* Product section */
+/* Product Section */
 .section-arrival {
     display: flex;
     justify-content: space-between;
@@ -67,16 +65,14 @@ a {
 .product-name {
     font-weight: 600;
     font-size: 20px;
-
 }
 
-/* Quick Link */
+/* Quick Link Section */
 .h1-background {
-    background-color: black;
+    background: linear-gradient(to right, blue, purple);
     padding: 80px 0;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to right, blue, purple);
 }
 
 .quick-link-container h1 {
@@ -103,6 +99,7 @@ a {
     font-size: 18px;
 }
 
+/* Call Now Button (Fixed on Mobile) */
 .call-now-btn {
     position: fixed;
     bottom: 0;
@@ -121,7 +118,6 @@ a {
     /* Ẩn trên desktop */
 }
 
-/* Ngăn đổi màu chữ sau khi nhấn */
 .call-now-btn:visited,
 .call-now-btn:active,
 .call-now-btn:focus {
@@ -130,12 +126,33 @@ a {
     text-decoration: none !important;
 }
 
-/* Ngăn trang bị cuộn ngang */
-body {
-    overflow-x: hidden;
+/* Direct Call Button (Under Wallpaper) */
+.btn-direct-call {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #f5af10;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 18px 30px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Responsive cho danh sách sản phẩm */
+.btn-direct-call:hover,
+.btn-direct-call:focus,
+.btn-direct-call:active {
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
 @media (max-width: 1024px) {
     .section-arrival {
         justify-content: center;
@@ -146,8 +163,7 @@ body {
     }
 
     .wallpaper {
-        padding: 0 20px;
-        /* Thêm padding để ảnh không sát mép */
+        padding: 0 10px;
     }
 }
 
@@ -160,17 +176,11 @@ body {
     .product-item {
         max-width: 100%;
     }
-
-    .wallpaper {
-        padding: 0 10px;
-    }
 }
 
-/* Điều chỉnh tiêu đề */
 @media (max-width: 576px) {
     .wallpaper {
         padding: 0;
-        /* Đảm bảo hình ảnh nằm trong container */
     }
 
     .title h1 {
@@ -185,47 +195,10 @@ body {
     footer {
         margin-bottom: 40px;
     }
-}
 
-.btn-direct-call {
-    display: block;
-    width: 100%;
-    /* Cho chiều rộng full màn hình */
-    max-width: 500px;
-    /* Giới hạn tối đa */
-    margin: 20px auto;
-    /* Căn giữa dưới wallpaper */
-    background-color: #f5af10;
-    color: white;
-    font-size: 22px;
-    /* Tăng kích thước chữ */
-    font-weight: bold;
-    padding: 18px 30px;
-    /* Tăng kích thước nút */
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    text-decoration: none;
-    /* Bỏ gạch chân */
-    transition: all 0.3s ease-in-out;
-}
-
-/* Hover & Active Effect */
-.btn-direct-call:hover,
-.btn-direct-call:focus,
-.btn-direct-call:active {
-    background-color: #ff9800;
-    color: white;
-    text-decoration: none;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
     .btn-direct-call {
         max-width: 90%;
-        /* Gần full màn hình */
         padding: 20px;
-        /* Tăng kích thước */
         font-size: 20px;
     }
 }

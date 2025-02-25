@@ -70,6 +70,39 @@ a {
 
 }
 
+/* Quick Link */
+.h1-background {
+    background-color: black;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, blue, purple);
+}
+
+.quick-link-container h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.quick-link-container ol {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.quick-link-container li {
+    margin: 12px;
+    font-size: 18px;
+}
+
+.more-info {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 18px;
+}
+
 .call-now-btn {
     position: fixed;
     bottom: 0;

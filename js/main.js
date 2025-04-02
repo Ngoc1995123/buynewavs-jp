@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
       return response.text();
     })
     .then((data) => {
-      headerDiv.innerHTML = data;
+      headerDiv.innerHTML = data; 
+      setActiveNavLink();
     })
     .catch((error) => {
       console.error("Error loading header.html:", error);
@@ -30,4 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
     .catch((error) => {
       console.error("Error loading footer.html:", error);
     });
+
+
+  // Adding class 'active' to nav-link refer to URL
+  function setActiveNavLink() {
+    const navLinks = document.querySelectorAll(".nav-link");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach((link) => {
+      if (link.getAttribute("href") === currentPath) {
+        link.classList.add("active");
+      }
+    });
+  }
 });
+

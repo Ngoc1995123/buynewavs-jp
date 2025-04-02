@@ -54,17 +54,17 @@
     list-style: none;
 }
 
-.footer ul li {
-    margin-bottom: 10px;
+.links-list ul li {
+    margin: 5px 0;
 }
 
-.footer ul li a {
+.links-list ul li a {
     color: #333;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer ul li a:hover {
+.links-list  ul li a:hover {
     color: #007bff;
 }
 
